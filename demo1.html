@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK FITNESS STUDIO | UNISEX</title>
+    <meta name="description"
+        content="Premium Unisex Gym in Nabapally, Kolkata. Get in shape with our top-tier equipment and expert trainers.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1E3A8A', // Blue-900
+                        secondary: '#3B82F6', // Blue-500
+                        light: '#F3F4F6',
+                        dark: '#1F2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased selection:bg-secondary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <h1 class="text-2xl font-bold text-primary tracking-tight">JK FITNESS<span class="text-secondary">
+                            STUDIO</span></h1>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-primary transition font-medium">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-primary transition font-medium">Packages</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition font-medium">About</a>
+                    <a href="#contact"
+                        class="bg-primary hover:bg-secondary text-white px-5 py-2.5 rounded-full font-medium transition shadow-md hover:shadow-lg">Join
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="relative bg-light pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 pr-0 lg:pr-12 text-center lg:text-left mb-12 lg:mb-0">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-blue-100 text-secondary text-sm font-semibold tracking-wider mb-4 uppercase">Shape
+                    Your Body</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight mb-6">
+                    Elevate Your Fitness Journey <span class="text-primary">Today.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    Premium space, expert guidance, and a community driven to succeed. Maximum workout for 1hr 30m.
+                    Let's build a healthier you.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="tel:09123979057"
+                        class="bg-primary hover:bg-primary/90 text-white px-8 py-3.5 rounded-full font-semibold transition shadow-lg hover:shadow-xl text-lg flex items-center justify-center">
+                        <i class="fa-solid fa-phone mr-2"></i> Call Now
+                    </a>
+                    <a href="#contact"
+                        class="bg-white hover:bg-gray-50 text-primary border border-gray-200 px-8 py-3.5 rounded-full font-semibold transition shadow-sm hover:shadow-md text-lg flex items-center justify-center">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop"
+                        alt="Well-lit gym interior with trainer"
+                        class="w-full h-auto object-cover transform hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Services / Packages Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Membership Packages</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Admission Charges: ₹700/-</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white border text-center border-gray-100 p-8 rounded-2xl hover-lift">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-calendar-days text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">1 Month</h3>
+                    <div class="text-primary font-bold text-3xl mb-4">₹1,000<span
+                            class="text-sm text-gray-400 font-normal">/mo</span></div>
+                    <p class="text-gray-600 text-sm mb-6">+ 1 Steam Session included for recovery.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white border text-center border-gray-100 p-8 rounded-2xl hover-lift relative overflow-hidden ring-2 ring-secondary">
+                    <div
+                        class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        POPULAR</div>
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-calendar-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">3 Months</h3>
+                    <div class="text-primary font-bold text-3xl mb-4">₹2,400</div>
+                    <p class="text-gray-600 text-sm mb-6">+ 2 Steam Sessions. Great for starting out.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border text-center border-gray-100 p-8 rounded-2xl hover-lift">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-award text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">6 Months</h3>
+                    <div class="text-primary font-bold text-3xl mb-4">₹4,000</div>
+                    <p class="text-gray-600 text-sm mb-6">+ 4 Steam Sessions. Commit to your goals.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border text-center border-gray-100 p-8 rounded-2xl hover-lift">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-crown text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">12 Months</h3>
+                    <div class="text-primary font-bold text-3xl mb-4">₹7,000</div>
+                    <p class="text-gray-600 text-sm mb-6">+ 10 Steam Sessions. Maximum value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us -->
+    <section class="py-16 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <i class="fa-solid fa-dumbbell text-4xl text-secondary mb-4"></i>
+                    <h4 class="font-bold text-dark">Top Experience</h4>
+                    <p class="text-sm text-gray-600 mt-2">Professional equipment</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved text-4xl text-secondary mb-4"></i>
+                    <h4 class="font-bold text-dark">Local Trust</h4>
+                    <p class="text-sm text-gray-600 mt-2">Loved by Nabapally</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wallet text-4xl text-secondary mb-4"></i>
+                    <h4 class="font-bold text-dark">Affordable</h4>
+                    <p class="text-sm text-gray-600 mt-2">Value for money</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-headset text-4xl text-secondary mb-4"></i>
+                    <h4 class="font-bold text-dark">Quick Support</h4>
+                    <p class="text-sm text-gray-600 mt-2">Trainers on floor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. About Business / Rules -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOeDi5hX16os8Gx0Ok3zLWlhnlns-O0AxkSCP3X=w1080-h720-p-k-no"
+                    alt="Professional gym workspace" class="rounded-2xl shadow-xl w-full">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl font-bold text-dark mb-6">Rules & Regulations</h2>
+                <ul class="space-y-4 text-gray-600 mb-8">
+                    <li class="flex items-start"><i class="fa-solid fa-check text-secondary mt-1 mr-3"></i> Rerack your
+                        weight after use.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-secondary mt-1 mr-3"></i> Put gym bag
+                        outside on rack (At your own risk).</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-secondary mt-1 mr-3"></i> Put the
+                        dumbbells & plates on floor with manners.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-secondary mt-1 mr-3"></i> Co-operate
+                        with floor Trainers & be nice to members.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-secondary mt-1 mr-3"></i> Use towel
+                        before using machines.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check text-secondary mt-1 mr-3"></i> Outside
+                        shoes are not allowed. Carry your gym shoes.</li>
+                </ul>
+
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-dark mb-2"><i
+                            class="fa-solid fa-circle-exclamation text-amber-500 mr-2"></i> Subscription Policy</h3>
+                    <p class="text-sm text-gray-600">Renew on time. Late fines: within 30 days ₹200, 60 days ₹400, 90
+                        days ₹600. After 90 days, membership permanently expires and admission charge (₹700) applies
+                        again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Testimonials -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">What Our Members Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover-lift relative pt-12">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul D."
+                        class="w-16 h-16 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md">
+                    <div class="text-yellow-400 mb-4 text-center"><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-center text-sm italic mb-4">"Great gym in Nabapally with excellent
+                        equipment. The trainers are very helpful and the environment is very motivating."</p>
+                    <h4 class="font-bold text-dark text-center">Rahul D.</h4>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover-lift relative pt-12">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya M."
+                        class="w-16 h-16 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md">
+                    <div class="text-yellow-400 mb-4 text-center"><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-center text-sm italic mb-4">"Very clean and hygienic. Following the
+                        rules makes it a safe space for everyone. Highly recommend the 6 months package!"</p>
+                    <h4 class="font-bold text-dark text-center">Priya M.</h4>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover-lift relative pt-12">
+                    <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Amit S."
+                        class="w-16 h-16 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md">
+                    <div class="text-yellow-400 mb-4 text-center"><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    <p class="text-gray-600 text-center text-sm italic mb-4">"The steam bath is a fantastic addition to
+                        the workout. Keeps me relaxed after intense weightlifting sessions."</p>
+                    <h4 class="font-bold text-dark text-center">Amit S.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Call To Action -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Shape Your Body?</h2>
+            <p class="mb-8 text-blue-100">Join JK Fitness Studio today and take the first step towards a healthier
+                lifestyle.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+919903759072"
+                    class="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg inline-flex items-center justify-center">
+                    <i class="fa-solid fa-phone mr-2"></i> +91 99037 59072
+                </a>
+                <a href="https://wa.me/919123979057" target="_blank"
+                    class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition shadow-lg inline-flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp flex text-2xl mr-2"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">Visit Our Studio</h2>
+                    <ul class="space-y-6 mb-8 text-gray-600">
+                        <li class="flex items-start">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary mr-4"><i
+                                    class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4 class="font-bold text-dark">Address</h4>
+                                <a href="https://maps.app.goo.gl/3pdYiutSsMLUovn6A" target="_blank"
+                                    class="hover:text-primary transition underline decoration-1 underline-offset-2">RA-220A,
+                                    Milan Nagar, Nabapally, Kolkata - 98</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary mr-4"><i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Working Hours</h4>
+                                <p>Morning: 6:00 AM - 12:30 PM <br> Evening: 4:00 PM - 10:30 PM <br> Sunday Closed</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-50 p-3 rounded-full text-primary mr-4"><i
+                                    class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4 class="font-bold text-dark">Contact</h4>
+                                <p>09123979057 / +919903759072</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Form UI -->
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm">
+                            <input type="tel" placeholder="Phone Number"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm">
+                        </div>
+                        <textarea placeholder="Message" rows="4"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"></textarea>
+                        <button type="submit"
+                            class="w-full bg-dark hover:bg-black text-white px-6 py-3 rounded-lg font-bold transition">Send
+                            Request</button>
+                    </form>
+                </div>
+
+                <div class="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-md">
+                    <!-- Google Maps Placeholder using generic coordinated link -->
+                    <iframe
+                        src="https://maps.google.com/maps?q=JK+FITNESS+STUDIO,+Nabapally,+Kolkata&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="bg-dark text-gray-400 py-12 border-t border-gray-800">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <h3 class="text-xl font-bold text-white tracking-tight mb-2">JK FITNESS<span class="text-secondary">
+                        STUDIO</span></h3>
+                <a href="https://maps.app.goo.gl/3pdYiutSsMLUovn6A" target="_blank"
+                    class="text-sm hover:text-white transition">RA-220A, Milan Nagar, Nabapally, Kolkata - 98</a>
+            </div>
+            <div class="text-sm">
+                &copy; 2024 JK Fitness Studio | Unisex. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
